@@ -1,0 +1,69 @@
+# ===============================
+# Visual Studio
+# ===============================
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ===============================
+# Rider
+# ===============================
+.idea/
+
+# ===============================
+# Build outputs
+# ===============================
+bin/
+obj/
+out/
+publish/
+
+# ===============================
+# ASP.NET Core / Dotnet
+# ===============================
+*.db
+*.db-shm
+*.db-wal
+*.log
+*.pfx
+*.key
+*.pem
+
+# ===============================
+# User secrets
+# ===============================
+secrets.json
+appsettings.Development.json
+
+# ===============================
+# Environment variables
+# ===============================
+.env
+
+# ===============================
+# NuGet
+# ===============================
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+
+# ===============================
+# Others
+# ===============================
+# Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# VS Code
+.vscode/
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
