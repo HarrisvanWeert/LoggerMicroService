@@ -1,4 +1,5 @@
 using LoggerAPI.Data;
+using LoggerAPI.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,6 +11,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
 // Add services to the container.
 
 builder.Services.AddControllers();
+builder.Services.AddScoped<ApiClientRepository>();
+builder.Services.AddScoped<LogRepository>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

@@ -9,6 +9,7 @@
         public string? CorrelationId { get; set; }
         public string? RequestPath { get; set; }
         public DateTime Timestamp { get; set; }
-
+        public int ApiClientId { get; set; }
+        public ApiClient ApiClient { get; set; }
     }
 }
